@@ -1,1 +1,9 @@
+:local(.row) {
+  display: 'flex';
+  justify-content: 'center';
+}
 
+:local(.bigAvatar) {
+  width: 60;
+  height: 60;
+}
