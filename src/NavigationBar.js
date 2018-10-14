@@ -1,12 +1,7 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+import {AppBar,Button,Toolbar,IconButton,Typography,Grid} from '@material-ui/core';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
-import Grid from '@material-ui/core/Grid';
 import style from "./NavigationBar.css";
 
 class NavigationBar extends React.Component {
