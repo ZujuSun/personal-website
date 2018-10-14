@@ -1,8 +1,8 @@
 import React from 'react';
-import NavigationBar from "./NavigationBar";
-import Home from './Home';
-import Experience from './Experience';
-import NotFound from './NotFound'
+import NavigationBar from "../NavigationBar/NavigationBar";
+import Home from '../Home';
+import Experience from '../Experience';
+import NotFound from '../NotFound'
 import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
 class App extends React.Component {
