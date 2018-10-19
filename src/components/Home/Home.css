@@ -1,0 +1,8 @@
+:local(.root) {
+    min-height: '100vh';
+    min-width: '100%';
+}
+:local(.paper) {
+    padding-top: 60;
+    padding-bottom: 60;
+}

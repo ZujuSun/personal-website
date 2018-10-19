@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationBar from "../NavigationBar/NavigationBar";
-import Home from '../Home';
+import Home from '../Home/Home';
 import Experience from '../Experience';
 import NotFound from '../NotFound'
 import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
