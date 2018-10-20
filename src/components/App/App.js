@@ -3,6 +3,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import Home from '../Home/Home';
 import Experience from '../Experience';
 import NotFound from '../NotFound'
+import Footer from '../Footer'
 import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
 class App extends React.Component {
@@ -17,6 +18,7 @@ class App extends React.Component {
             <Route path="/404" component={NotFound} />
             <Redirect from="*" to="/404" />
         </Switch>
+        <Footer/>
         </div>
       </Router>
     );

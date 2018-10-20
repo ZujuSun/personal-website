@@ -46,8 +46,8 @@ class Home extends React.Component {
           Zuju(Jackie) Sun
         </Typography>
         <Typography variant="h6" align="left" color="textSecondary" paragraph>
-          Hi, My name is Jackie, a 3B Computer Engineering student from University of Waterloo. I am passionate software developer who were very 
-          deeply experienced with both web and mobile development. Currently I am looking for positions regarding my last coop term, please feel free to contexg me if you are interested! 
+          Hi, My name is Jackie, a 3B Computer Engineering student from University of Waterloo. I am apassionate software developer 
+          deeply experienced with both web and mobile development. Currently I am looking for positions regarding my last coop term, please feel free to context me if you are interested! 
         </Typography>
         <div className={classes.heroButtons}>
           <Grid container spacing={16} justify="center">
