@@ -6,6 +6,11 @@ import NotFound from '../NotFound'
 import Footer from '../Footer'
 import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
+// the icon libaray
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fab)
+
 class App extends React.Component {
   render() {
     return (
