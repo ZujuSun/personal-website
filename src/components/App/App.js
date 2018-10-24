@@ -1,15 +1,16 @@
 import React from 'react';
 import NavigationBar from "../NavigationBar/NavigationBar";
-import Home from '../Home/Home';
+import Home from '../Home';
 import Experience from '../Experience';
 import NotFound from '../NotFound'
 import Footer from '../Footer'
 import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 
-// the icon libaray
+// the font awesome icon libaray
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-library.add(fab)
+import {faGraduationCap} from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faGraduationCap)
 
 class App extends React.Component {
   render() {

@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { withStyles } from '@material-ui/core/styles';
 
@@ -43,14 +44,16 @@ class Home extends React.Component {
         <div className={classes.heroButtons}>
           <Grid container spacing={16} justify="center">
             <Grid item>
-              <Button variant="contained" color="primary">
-                About Me
-              </Button>
+                <Button variant="outlined" color="primary">
+                  Resume
+                </Button>
             </Grid>
             <Grid item>
-              <Button variant="outlined" color="primary">
-                Experience
-              </Button>
+              <Link to="/Experience">
+                <Button variant="contained" color="primary">
+                  Experience
+                </Button>
+              </Link>
             </Grid>
           </Grid>
         </div>
