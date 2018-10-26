@@ -10,9 +10,6 @@ const styles = theme => ({
   appBar: {
     position: 'relative',
   },
-  a: {
-
-  },
   heroContent: {
     maxWidth: 600,
     margin: '0 auto',
@@ -21,6 +18,7 @@ const styles = theme => ({
   },
   heroButtons: {
     marginTop: theme.spacing.unit * 4,
+    textDecoration: "none",
   },
   socialIcons: {
     marginTop: theme.spacing.unit * 7,
