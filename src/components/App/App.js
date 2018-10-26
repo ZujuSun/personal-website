@@ -9,8 +9,8 @@ import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-do
 // the font awesome icon libaray
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import {faGraduationCap} from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faGraduationCap)
+import {faGraduationCap, faBuilding} from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faGraduationCap, faBuilding)
 
 class App extends React.Component {
   render() {
