@@ -15,8 +15,6 @@ import XELogo from '../asset/XE-logo.png'
 const styles = theme => ({
   root: {
     position: 'relative',
-    paddingLeft: theme.spacing.unit * 40,
-    paddingRight: theme.spacing.unit * 40,
     paddingTop: theme.spacing.unit * 5,
     backgroundColor: theme.palette.background.paper,
   },
@@ -41,8 +39,8 @@ const styles = theme => ({
     flex: '1 0 auto',
   },
   cover: {
-    width: 200,
-    height: 200,
+    width: 180,
+    height: 180,
     margin: 5,
   },
   controls: {
@@ -63,8 +61,13 @@ class Experience extends React.Component {
       const bull = <span className={classes.bullet}>•</span>;
       
       return (
-        <Grid container direction = "column" spacing={16} className={classes.root}>
+        <Grid container direction = "row" justify = "center" alignItems="flex-start">
+          <Grid item sm={2}></Grid>
+        <Grid item sm={8}>
+          <Grid container direction = "column" spacing={16} className={classes.root}>
+
           <Grid item>
+            {/* cards */}
             <Grid container direction = "column" spacing={8} className={classes.heroUnit}>
               <Grid item>
                 <Typography variant="title" gutterBottom color="primary">
@@ -99,6 +102,7 @@ class Experience extends React.Component {
           </Grid>
 
           <Grid item>
+            {/* cards */}
             <Grid container direction = "column" spacing={8} className={classes.heroUnit}>
               <Grid item>
                 <Typography variant="title" gutterBottom color="primary">
@@ -126,7 +130,7 @@ class Experience extends React.Component {
                           <br/>
                           {bull}Constructed the Widget and IMessage Extension from scratch for the app redesign
                           <br/>
-                          {bull}Optimized UIcomponents, maintained modular codebase and developed a customized animation for the latest XE Travel App
+                          {bull}Optimized UI components, maintained modular codebase and developed a customized animation for the Travel App
                           <br/>
                           {bull}Designed and modified multiple DataManagers in CocoaPods to handle multiple changes in API Requests
                           <br/>
@@ -139,6 +143,7 @@ class Experience extends React.Component {
               </Grid>
 
               <Grid item>
+                {/* cards */}
                 <Card className={classes.card}>
                     <CardMedia
                       className={classes.cover}
@@ -218,24 +223,28 @@ class Experience extends React.Component {
                           Jan 2016 - Apr 2016 | North York, CA
                         </Typography>
                         <Typography variant="subtitle1" className = {classes.cardDistance}>
-                          {bull}Independently Developed a seamless integration framework between SharePoint and Asana, enabling them to support bi-directional operations by using ASP.NET 
+                          {bull}Independently Developed a seamless integration framework between SharePoint and Asana
                           <br/>
-                          {bull}Created an image slider within an application module withcustomized animationin JavaScript which retrieved live images from merchandize’s mobile application
+                          {bull}Created an image slider within an application module with customized animation in JavaScript
                           <br/>
-                          {bull}Developed a mobile application which allows merchandisers to keeptrack of their shipment information on their mobile phone and poststhe same information onto SharePoint 2013 by using ASP.NET MVC4
+                          {bull}Developed a travelling expense mobile application which is in sync with SharePoint by using ASP.NET MVC4
                           <br/>
-                          {bull}Used both client and server side object model in C# to maintainand manage Blackbox and Teamsite of SharePoint 2013
+                          {bull}Used both client and server side object model in C# to maintainand manage Blackbox and Teamsite of SharePoint
                           <br/>
-                          {bull}created an Android App that was able to add, re-trieve and remove data from SQL server by calling REST API; Theapp was published to the company's private channel
+                          {bull}created an Android App that was able to add, re-trieve and remove data from SQL server by calling REST API
                         </Typography>
                         
                       </CardContent>
                     </div>
                 </Card>
               </Grid>
+              
             </Grid>
           </Grid>
 
+        </Grid>
+        </Grid>
+        <Grid item sm={2}></Grid>
         </Grid>
       );
     }

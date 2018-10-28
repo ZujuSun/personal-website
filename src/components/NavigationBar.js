@@ -46,7 +46,7 @@ class NavigationBar extends React.Component {
                 <Button size="small" color="inherit"  href="/experience"className="mx-2 font-weight-bold">
                     experience
                 </Button>
-                <IconButton color="inherit">
+                <IconButton color="inherit" href="mailto:z59sun@uwaterloo.ca?Subject=intern%20opportunity">
                   <MailIcon />
                 </IconButton>
                 <IconButton aria-haspopup="true" color="inherit" href="/">
