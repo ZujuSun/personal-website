@@ -16,6 +16,9 @@ const styles = theme => ({
   root: {
     position: 'relative',
     paddingTop: theme.spacing.unit * 5,
+    maxWidth: 1100,
+    margin: '0 auto',
+    display: 'flex',
     backgroundColor: theme.palette.background.paper,
   },
   bullet: {
@@ -61,11 +64,7 @@ class Experience extends React.Component {
       const bull = <span className={classes.bullet}>•</span>;
       
       return (
-        <Grid container direction = "row" justify = "center" alignItems="flex-start">
-          <Grid item sm={2}></Grid>
-        <Grid item sm={8}>
           <Grid container direction = "column" spacing={16} className={classes.root}>
-
           <Grid item>
             {/* cards */}
             <Grid container direction = "column" spacing={8} className={classes.heroUnit}>
@@ -242,9 +241,6 @@ class Experience extends React.Component {
             </Grid>
           </Grid>
 
-        </Grid>
-        </Grid>
-        <Grid item sm={2}></Grid>
         </Grid>
       );
     }
