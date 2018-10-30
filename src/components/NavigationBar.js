@@ -3,6 +3,10 @@ import {AppBar,Button,Toolbar,IconButton,Typography} from '@material-ui/core';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import { withStyles } from '@material-ui/core/styles';
+import MenuItem from '@material-ui/core/MenuItem';
+import MenuIcon from '@material-ui/icons/Menu';
+import Menu from '@material-ui/core/Menu';
+import Badge from '@material-ui/core/Badge';
 
 const styles = theme => ({
   headerRoot: {
@@ -16,20 +20,75 @@ const styles = theme => ({
   },
   title: {
     display: 'none',
-  },
-  inputRoot: {
-    color: 'inherit',
-    width: '100%',
+    [theme.breakpoints.up('md')]: {
+      display: 'block',
+    },
   },
   sectionDesktop: {
+    display: 'none',
+    [theme.breakpoints.up('lg')]: {
+      display: 'flex',
+    },
+  },
+  sectionMobile: {
     display: 'flex',
-  }
+    [theme.breakpoints.up('lg')]: {
+      display: 'none',
+    },
+  },
 });
 
+
 class NavigationBar extends React.Component {
+    state = {
+      mobileMoreAnchorEl: null,
+    };
+
+    handleMobileMenuOpen = event => {
+      this.setState({ mobileMoreAnchorEl: event.currentTarget });
+    };
+
+    handleMobileMenuClose = () => {
+      this.setState({ mobileMoreAnchorEl: null });
+    };
 
     render() {
+      const { mobileMoreAnchorEl } = this.state;
       const {classes} = this.props
+      const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+      const renderMobileMenu = (
+        <Menu
+          anchorEl={mobileMoreAnchorEl}
+          anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+          transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+          open={isMobileMenuOpen}
+          onClose={this.handleMobileMenuClose}
+        >
+          <MenuItem>
+            <IconButton color="inherit">
+              <Badge badgeContent={4} color="secondary">
+                <MailIcon />
+              </Badge>
+            </IconButton>
+            <p>Messages</p>
+          </MenuItem>
+          <MenuItem>
+            <IconButton color="inherit">
+              <Badge badgeContent={11} color="secondary">
+              <AccountCircle />
+              </Badge>
+            </IconButton>
+            <p>Notifications</p>
+          </MenuItem>
+          <MenuItem onClick={this.handleProfileMenuOpen}>
+            <IconButton color="inherit">
+              <AccountCircle />
+            </IconButton>
+            <p>Profile</p>
+          </MenuItem>
+        </Menu>
+      );
 
       return (
         <div className={classes.headerRoot}>
@@ -53,8 +112,14 @@ class NavigationBar extends React.Component {
                     <AccountCircle />
                 </IconButton>
               </div>
+              <div className={classes.sectionMobile}>
+                <IconButton aria-haspopup="true" onClick={this.handleMobileMenuOpen} color="inherit">
+                  <MenuIcon />
+                </IconButton>
+              </div>
             </Toolbar>
           </AppBar>
+          {renderMobileMenu}
         </div>
       );
     }
