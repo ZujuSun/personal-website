@@ -16,7 +16,7 @@ const styles = theme => ({
   root: {
     position: 'relative',
     paddingTop: theme.spacing.unit * 5,
-    maxWidth: 1200,
+    maxWidth: 1100,
     margin: '0 auto',
     display: 'flex',
     backgroundColor: theme.palette.background.paper,
