@@ -200,7 +200,7 @@ class Skills extends React.Component {
                     </Card>
                 </Grid>
 
-                <Grid item sm={12} md={6} lg={6}>
+                <Grid item xs ={12} sm={6} md={6}>
                     <Card className={classes.projectCard}>
                       <CardMedia
                         className={classes.cardMedia}
@@ -226,7 +226,7 @@ class Skills extends React.Component {
                     </Card>
                 </Grid>
 
-                <Grid item sm={12} md={6} lg={6}>
+                <Grid item xs ={12} sm={6} md={6}>
                     <Card className={classes.projectCard}>
                       <CardMedia
                         className={classes.cardMedia}
