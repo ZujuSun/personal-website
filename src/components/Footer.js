@@ -7,7 +7,7 @@ const styles = theme => ({
     footer: {
         backgroundColor: theme.palette.background.paper,
         margin: 'auto',
-        paddingTop:  theme.spacing.unit * 24,
+        paddingTop:  theme.spacing.unit * 14,
     },
 });
   

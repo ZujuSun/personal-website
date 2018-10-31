@@ -159,11 +159,16 @@ class Experience extends React.Component {
               <Grid item>
                 {/* cards */}
                 <Card className={classes.card}>
-                    <CardMedia
-                      className={classes.cover}
-                      image = {RHBoysLogo}
-                      title="RHBoys"
-                    />
+                  <Grid container direction = "row" spacing={8} justify="center" alignItems="center">
+                    <Grid item xs={12} sm={3} md={2} className={classes.mediaGrid}>
+                      <CardMedia
+                        className={classes.cover}
+                        image = {RHBoysLogo}
+                        title="RHBoys"
+                      />
+                    </Grid>
+
+                    <Grid item xs={12} sm={9} md={10}>
                     <div className={classes.details}>
                       <CardContent className={classes.content}>
                         <Typography component="h5" variant="h5">
@@ -186,16 +191,23 @@ class Experience extends React.Component {
                         
                       </CardContent>
                     </div>
+                    </Grid>
+                  </Grid>
                 </Card>
               </Grid>
 
               <Grid item>
                 <Card className={classes.card}>
-                    <CardMedia
-                      className={classes.cover}
-                      image = {BDOLogo}
-                      title="BDO Solutions"
-                    />
+                <Grid container direction = "row" spacing={8} justify="center" alignItems="center">
+                    <Grid item xs={12} sm={3} md={2} className={classes.mediaGrid}>
+                      <CardMedia
+                        className={classes.cover}
+                        image = {BDOLogo}
+                        title="BDO Solutions"
+                      />
+                    </Grid>
+
+                    <Grid item xs={12} sm={9} md={10}>
                     <div className={classes.details}>
                       <CardContent className={classes.content}>
                         <Typography component="h5" variant="h5">
@@ -218,38 +230,47 @@ class Experience extends React.Component {
                         
                       </CardContent>
                     </div>
+                    </Grid>
+                  </Grid>
                 </Card>
               </Grid>
 
               <Grid item>
                 <Card className={classes.card}>
-                    <CardMedia
-                      className={classes.cover}
-                      image = {FGFLogo}
-                      title="fgf brands"
-                    />
-                    <div className={classes.details}>
-                      <CardContent className={classes.content}>
-                        <Typography component="h5" variant="h5">
-                          Innovation Driven Web Developer
-                        </Typography>
-                        <Typography variant="subtitle1" color="textSecondary">
-                          Jan 2016 - Apr 2016 | North York, CA
-                        </Typography>
-                        <Typography variant="subtitle1" className = {classes.cardDistance}>
-                          {bull}Independently Developed a seamless integration framework between SharePoint and Asana
-                          <br/>
-                          {bull}Created an image slider within an application module with customized animation in JavaScript
-                          <br/>
-                          {bull}Developed a travelling expense mobile application which is in sync with SharePoint by using ASP.NET MVC4
-                          <br/>
-                          {bull}Used both client and server side object model in C# to maintainand manage Blackbox and Teamsite of SharePoint
-                          <br/>
-                          {bull}created an Android App that was able to add, re-trieve and remove data from SQL server by calling REST API
-                        </Typography>
-                        
-                      </CardContent>
-                    </div>
+                <Grid container direction = "row" spacing={8} justify="center" alignItems="center">
+                    <Grid item xs={12} sm={3} md={2} className={classes.mediaGrid}>
+                      <CardMedia
+                        className={classes.cover}
+                        image = {FGFLogo}
+                        title="fgf brands"
+                      />
+                    </Grid>
+
+                    <Grid item xs={12} sm={9} md={10}>
+                      <div className={classes.details}>
+                        <CardContent className={classes.content}>
+                          <Typography component="h5" variant="h5">
+                            Innovation Driven Web Developer
+                          </Typography>
+                          <Typography variant="subtitle1" color="textSecondary">
+                            Jan 2016 - Apr 2016 | North York, CA
+                          </Typography>
+                          <Typography variant="subtitle1" className = {classes.cardDistance}>
+                            {bull}Independently Developed a seamless integration framework between SharePoint and Asana
+                            <br/>
+                            {bull}Created an image slider within an application module with customized animation in JavaScript
+                            <br/>
+                            {bull}Developed a travelling expense mobile application which is in sync with SharePoint by using ASP.NET MVC4
+                            <br/>
+                            {bull}Used both client and server side object model in C# to maintainand manage Blackbox and Teamsite of SharePoint
+                            <br/>
+                            {bull}created an Android App that was able to add, re-trieve and remove data from SQL server by calling REST API
+                          </Typography>
+                          
+                        </CardContent>
+                      </div>
+                    </Grid>
+                  </Grid>
                 </Card>
               </Grid>
               
