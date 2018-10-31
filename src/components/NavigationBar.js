@@ -1,12 +1,10 @@
 import React from 'react';
 import {AppBar,Button,Toolbar,IconButton,Typography} from '@material-ui/core';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
 import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
-import MenuIcon from '@material-ui/icons/Menu';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Menu from '@material-ui/core/Menu';
-import Badge from '@material-ui/core/Badge';
+import { Link } from "react-router-dom";
 
 const styles = theme => ({
   headerRoot: {
@@ -65,27 +63,14 @@ class NavigationBar extends React.Component {
           open={isMobileMenuOpen}
           onClose={this.handleMobileMenuClose}
         >
-          <MenuItem>
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <p>Messages</p>
+           <MenuItem button component={Link} to="/skills" className="mx-2 font-weight-bold">
+            Skills
           </MenuItem>
-          <MenuItem>
-            <IconButton color="inherit">
-              <Badge badgeContent={11} color="secondary">
-              <AccountCircle />
-              </Badge>
-            </IconButton>
-            <p>Notifications</p>
+          <MenuItem button component={Link} to="/experience" className="mx-2 font-weight-bold">
+            Experience
           </MenuItem>
-          <MenuItem onClick={this.handleProfileMenuOpen}>
-            <IconButton color="inherit">
-              <AccountCircle />
-            </IconButton>
-            <p>Profile</p>
+          <MenuItem button component={Link} to="/" className="mx-2 font-weight-bold">
+            Home
           </MenuItem>
         </Menu>
       );
@@ -106,15 +91,15 @@ class NavigationBar extends React.Component {
                     experience
                 </Button>
                 <IconButton color="inherit" href="mailto:z59sun@uwaterloo.ca?Subject=thanks%20for%20reaching">
-                  <MailIcon />
+                  <FontAwesomeIcon icon={"envelope"} size="md" />
                 </IconButton>
                 <IconButton aria-haspopup="true" color="inherit" href="/">
-                    <AccountCircle />
+                  <FontAwesomeIcon icon={"user-circle"} size="md" />
                 </IconButton>
               </div>
               <div className={classes.sectionMobile}>
                 <IconButton aria-haspopup="true" onClick={this.handleMobileMenuOpen} color="inherit">
-                  <MenuIcon />
+                  <FontAwesomeIcon icon={"bars"} size="md" />
                 </IconButton>
               </div>
             </Toolbar>

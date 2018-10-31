@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Favorite from '@material-ui/icons/Favorite';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
@@ -21,7 +21,7 @@ class Footer extends React.Component {
                     Personal Webpage
                 </Typography>
                 <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                    made with <Favorite color="secondary" fontSize="h6" /> by Jackie Sun
+                    made with <FontAwesomeIcon icon={"heart"} size="md" color = "red" /> by Jackie Sun
                 </Typography>
             </footer>
       );
