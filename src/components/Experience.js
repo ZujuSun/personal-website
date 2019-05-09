@@ -94,11 +94,12 @@ class Experience extends React.Component {
                             University Of Waterloo
                           </Typography>
                           <Typography variant="subtitle1" color="textSecondary">
-                            3B Computer Engineering - Candidate for BASc
+                            4A Computer Engineering - Candidate for BASc
                           </Typography>
                           <Typography variant="subtitle1" className = {classes.cardDistance}>
                             {bull}Algorithms and Data Structures <br/> {bull}Digital Hardware Systems Design<br/>
                             {bull}Embedded Microprocessor Systems <br/> {bull}Compiler Design
+                            {bull}Network Architecture <br/> {bull}Database Design
                           </Typography>
                           
                         </CardContent>
@@ -140,15 +141,6 @@ class Experience extends React.Component {
                           Sept 2018 – Dec 2018 | Toronto, CA
                         </Typography>
                         <Typography variant="subtitle1" className = {classes.cardDistance}>
-                          {/* {bull}Responsible for the updates and optimization of the latest modules in XE Currency App
-                          <br/>
-                          {bull}Constructed the Widget and IMessage Extension from scratch for the app redesign
-                          <br/>
-                          {bull}Optimized UI components, maintained modular codebase and developed a customized animation for Travel App
-                          <br/>
-                          {bull}Designed and modified multiple DataManagers in CocoaPods to handle multiple changes in API Requests
-                          <br/>
-                          {bull}Involved at every product phase from concept creation to app store deployment */}
                           {bull}Developed features to support the Onboarding Process for Virgin Mobile Benefit app , serving over 1.8 million users
                           <br/>
                           {bull}Wrote features and defect resolutions for IoT application We-Connect, serving over 200K users
