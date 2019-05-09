@@ -24,7 +24,7 @@ class App extends React.Component {
             <Route path="/experience" component={Experience} />
             <Route path="/404" component={NotFound} />
             <Route path="/skills" component={Skills} />
-            <Redirect from="*" to="/404" />
+            <Redirect from="*" to="/" />
         </Switch>
         <Footer/>
         </div>
