@@ -11,6 +11,7 @@ import FGFLogo from '../asset/fgf-logo.jpeg'
 import BDOLogo from '../asset/bdo-logo.png'
 import RHBoysLogo from '../asset/RHBoys-logo.png'
 import XELogo from '../asset/XE-logo.png'
+import CoreLogicLogo from '../asset/coreLogic.png'
 
 const styles = theme => ({
   root: {
@@ -116,6 +117,56 @@ class Experience extends React.Component {
                 <Typography variant="title" gutterBottom color="primary">
                     Experience: <FontAwesomeIcon icon={"building"} size="lg" />
                 </Typography>
+              </Grid>
+
+
+              <Grid item>
+                <Card className={classes.card}>
+                  <Grid container direction = "row" spacing={8} justify="center" alignItems="center">
+                    <Grid item xs={12} sm={3} md={2} className={classes.mediaGrid}>
+                      <CardMedia
+                        className={classes.cover}
+                        image = {CoreLogicLogo}
+                        title="CoreLogic (formerly Symbility Intersect)"
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={9} md={10}>
+                    <div className={classes.details}>
+                      <CardContent className={classes.content}>
+                        <Typography component="h5" variant="h5">
+                          Mobile Engineer
+                        </Typography>
+                        <Typography variant="subtitle1" color="textSecondary">
+                          Sept 2018 – Dec 2018 | Toronto, CA
+                        </Typography>
+                        <Typography variant="subtitle1" className = {classes.cardDistance}>
+                          {/* {bull}Responsible for the updates and optimization of the latest modules in XE Currency App
+                          <br/>
+                          {bull}Constructed the Widget and IMessage Extension from scratch for the app redesign
+                          <br/>
+                          {bull}Optimized UI components, maintained modular codebase and developed a customized animation for Travel App
+                          <br/>
+                          {bull}Designed and modified multiple DataManagers in CocoaPods to handle multiple changes in API Requests
+                          <br/>
+                          {bull}Involved at every product phase from concept creation to app store deployment */}
+                          {bull}Developed features to support the Onboarding Process for Virgin Mobile Benefit app , serving over 1.8 million users
+                          <br/>
+                          {bull}Wrote features and defect resolutions for IoT application We-Connect, serving over 200K users
+                          <br/>
+                          {bull}Implemented Real-time User Activity Tracking using Facebook Analytics
+                          <br/>
+                          {bull}Designed SSL pinning to protect against man-in-the-middle attack techniques
+                          <br/>
+                          {bull}integrated IoT product Moxie into existing Bluetooth Communication Layer using XMPP Protocol
+                          <br/>
+                          {bull}Optimized 40% of the existing codebase by applying SOLID Principle and Minification Rules
+                        </Typography>
+                        
+                      </CardContent>
+                    </div>
+                    </Grid>
+                  </Grid>
+                </Card>
               </Grid>
 
               <Grid item>
